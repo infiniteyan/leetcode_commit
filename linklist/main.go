@@ -7,7 +7,7 @@ type ListNode struct {
 	val		int
 }
 
-func reverseList(head *ListNode) *ListNode {
+func swapPairs(head *ListNode) *ListNode {
 	if head == nil {
 		return nil
 	}
@@ -57,7 +57,7 @@ func main() {
 	sec.next = &thir
 	thir.next = &forth
 
-	newList := reverseList(&first)
+	newList := swapPairs(&first)
 	ptr := newList
 	for ptr != nil {
 		fmt.Printf("%d  ", ptr.val)
